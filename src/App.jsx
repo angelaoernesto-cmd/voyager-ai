@@ -1750,9 +1750,7 @@ function HomeScreen({trips,dark,setDark,onNewTrip,onUpdateTrip,onDeleteTrip,onAd
       {showEdit&&activeTrip&&(()=>{
         const initAsgn={};
         activeTrip.cities.forEach(c=>{const f=isoDay(c.from,activeTrip.year,activeTrip.month);const t2=isoDay(c.to,activeTrip.year,activeTrip.month);if(f&&t2)initAsgn[c.name]={from:f,to:t2};});
-        const[editCities,setEC]=useState(activeTrip.cities.map(c=>({...c})));
-        const[editAsgn,setEA]=useState(initAsgn);
-        const[editAC,setEAC]=useState(activeTrip.cities[0]||null);
+        
         return(
           <div style={{position:"fixed",inset:0,zIndex:200}}>
             <DayPickerCal year={activeTrip.year} month={activeTrip.month}
