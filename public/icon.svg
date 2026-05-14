@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1A1714"/>
+  <!-- Gold accent bar -->
+  <rect x="0" y="340" width="512" height="8" rx="2" fill="#B45309"/>
+  <!-- Letter V -->
+  <text x="90" y="320"
+        font-family="Georgia, serif"
+        font-size="300"
+        font-weight="900"
+        fill="white"
+        letter-spacing="-8">V</text>
+  <!-- Plane emoji substitute — simple triangle plane -->
+  <g transform="translate(310,90) rotate(45)">
+    <polygon points="0,-36 10,16 0,8 -10,16" fill="#B45309"/>
+    <polygon points="-22,-4 0,8 0,-8" fill="#D97706"/>
+    <polygon points="22,-4 0,8 0,-8" fill="#D97706"/>
+  </g>
+  <!-- Gold dot -->
+  <circle cx="420" cy="380" r="18" fill="#B45309"/>
+</svg>

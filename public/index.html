@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1A1714" />
+    <meta name="description"  content="Voyager AI — Planifica tu viaje con inteligencia artificial" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Voyager" />
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Icons -->
+    <link rel="icon"             href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"       content="Voyager AI" />
+    <meta property="og:description" content="Tu planificador de viajes inteligente" />
+    <meta property="og:type"        content="website" />
+
+    <style>
+      /* Prevent iOS zoom on form fields */
+      input, select, textarea { font-size: 16px !important; }
+      /* Remove tap highlight flash */
+      * { -webkit-tap-highlight-color: transparent; }
+      /* Prevent scroll bounce / overscroll */
+      html, body { height: 100%; overflow: hidden; }
+      body { margin: 0; background: #1A1714; }
+      /* Safe area padding for notch / gesture bar */
+      #root {
+        padding-top:  env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+    </style>
+
+    <title>Voyager AI</title>
+  </head>
+  <body>
+    <noscript>Activa JavaScript para usar Voyager.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
